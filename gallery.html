@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Too-rist Adda</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                Toorist<span>adda</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Nainital</h1>
+                <p>Nainital, the charming Himalayan lake town, is a picture-postcard perfect hill-station and one of the
+                    most popular in Northern India. Commonly known as the ‘Lake District’.</p>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- gallery section -->
+    <div id="gallery" class="py-4">
+        <div class="container">
+            <div class="gallery-row">
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/Nainital-Snowfall.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/nainital.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/lovenanital.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/snow-view-point.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/snow-view.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/snowarial.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="New folder/uttrakhand/Nainital/snownani.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-8.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+                <div class="gallery-item shadow">
+                    <img src="images/gallery-9.jpg" alt="gallery img">
+                    <span class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of gallery section -->
+
+    <!-- img modal -->
+    <div id="img-modal-box">
+        <div id="img-modal">
+            <button type="button" id="modal-close-btn" class="flex">
+                <i class="fas fa-times"></i>
+            </button>
+            <button type="button" id="prev-btn" class="flex">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button type="button" id="next-btn" class="flex">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="images/gallery-1.jpg">
+        </div>
+    </div>
+    <!-- end of img modal -->
+
+    <!-- popular places section -->
+    <section id="popular" class="py-4">
+        <div class="title-wrap">
+            <span class="sm-title">know about some cool destination</span>
+            <h2 class="lg-title">Popular Places</h2>
+        </div>
+        <div><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27812.66680600021!2d79.43776108836153!3d29.382486451474684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0a1bc28fd9d61%3A0x7cae7ba916987db3!2sNainital%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1668957874967!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <section id="popular" class="py-4">
+            <div class="title-wrap">
+                <span class="sm-title">know about some coo destination</span>
+                <h2 class="lg-title">Popular Places</h2>
+            </div>
+            <div class="popular-row">
+                <div class="popular-item shadow">
+                    <img src="images/bhimport.jpg" alt="">
+                    <div>
+                        <span>Bhimtal, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">A is a town 22km from Nainital.</p>
+                        <p class="text">The major attraction in Bhimtal is the Bhimtal Lake, which has an island at its
+                            centre.</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/ranikhetport.jpg" alt="">
+                    <div>
+                        <span>Ranikhet, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">Ranikhet is a hill station in Uttarakhand State,</p>
+                        <p class="text"> It’s known for its views of the Himalayas.</p>
+
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/khurpatal.jpg" alt="">
+                    <div>
+                        <span>Khurpatal, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">Khurpatal is a ravishing lake bejeweled in the suburbs of Nainital city.</p>
+                        <p class="text">This lake is situated at a favorable distance of 11 km from the 'Lake City'
+                            Nainital.</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/mukteshwarport.jpg" alt="">
+                    <div>
+                        <span>Mukteshwar, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">51 km from Nainital,Mukteshwar is a village and tourist destination in the
+                            Nainital.</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/sattalport.jpg" alt="">
+                    <div>
+                        <span>Sattal, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">It is a town near Bhimtal, a town of the Nainital district in Uttarakhand,
+                            India.</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/kausaniport.jpg" alt="">
+                    <div>
+                        <span>Kausani</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">Kausani is a hill station and Village situated in Bageshwar district in the
+                            state of Uttarakhand, India. It is famous for its scenic splendour and its spectacular 300
+                            km-wide panoramic view of Himalayan peaks like Trisul, Nanda Devi and Panchchuli.!</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/jimcorbet.jpg" alt="">
+                    <div>
+                        <span>Ramnagar, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">Ramnagar is a gateway to the Corbett National Park. Ramnagar is a town and
+                            municipal board in the Nainital district of Kumaon, India. It is located approximately 65
+                            kilometres from Nainital.</p>
+                    </div>
+                </div>
+
+                <div class="popular-item shadow">
+                    <img src="images/bin.jpg" alt="">
+                    <div>
+                        <span>Binsar, uttrakhand</span>
+                        <ul class="rating flex">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class="text">Located at a distance of 33 km from Almora, Binsar is a small town in
+                            Uttarakhand known for the surreal beauty of the snow-laden Himalayan peaks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular places section -->
+
+
+        <!-- footer -->
+        <footer class="py-4">
+            <div class="container footer-row">
+                <div class="footer-item">
+                    <a href="index.html" class="site-brand">
+                        Toorist<span>adda</span>
+                    </a>
+                    <p class="text">We hope that through this website you have got help in finding your travel
+                        destination.</p>
+                </div>
+
+                <div class="footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href="#">Bareilly</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Agra</a></li>
+                        <li><a href="#">Manali</a></li>
+                        <li><a href="#">Nainital</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter Email" class="form-control">
+                        <input type="submit" class="btn" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src="js/script.js"></script>
+        <script>
+            // image modal
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+
+            allGalleryItem.forEach((galleryItem) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                    showImageContent(imgIndex);
+                })
+            });
+
+            // next click
+            nextBtn.addEventListener('click', () => {
+                imgIndex++;
+                if (imgIndex > allGalleryItem.length) {
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            });
+
+            // previous click
+            prevBtn.addEventListener('click', () => {
+                imgIndex--;
+                if (imgIndex <= 0) {
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            });
+
+            function showImageContent(index) {
+                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+            }
+
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
+</body>
+
+</html>
